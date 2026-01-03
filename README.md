@@ -14,20 +14,20 @@ Curso Arquitetura Limpa com ASP.NET Core no nextwave(LuisDEV)
    - API/UI
  ### Camadas da Arquitetura Limpa
   - Camada Core
-   - Camada central da Clean Architecture, contendo a expressão em código do domínio do negócio
-   - Alguns conceitos e componentes do Domain-Driven Design são expressados aqui, como
-     - Entidades
-     - Value Objects
-     - Repositórios(Interfaces)
-     - Eventos
-   - Os principais componentes que geralmente estao contidos aqui são:
-     - Entidades e Agregados
-     - Values Objects
-     - Factories
-     - Repositorios(Interface)
-     - Enums relacionados a outros componentes dessa camada
-     - Serviços de Domínio
-     - Exceções de Domínio
+    - Camada central da Clean Architecture, contendo a expressão em código do domínio do negócio
+    - Alguns conceitos e componentes do Domain-Driven Design são expressados aqui, como
+      - Entidades
+      - Value Objects
+      - Repositórios(Interfaces)
+      - Eventos
+    - Os principais componentes que geralmente estao contidos aqui são:
+      - Entidades e Agregados
+      - Values Objects
+      - Factories
+      - Repositorios(Interface)
+      - Enums relacionados a outros componentes dessa camada
+      - Serviços de Domínio
+      - Exceções de Domínio
  - Camada Infrastructure
    - Camada responsavel por integração com componentes de infraestrutura, como acesso a dados, caching, serviços de computação em nuvem, outros sistemas (externos ou              internos a organização), entre outros.
    - Cada um dos subitens pode ser dividido em projetos proprios, como:
