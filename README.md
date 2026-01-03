@@ -39,4 +39,20 @@ Curso Arquitetura Limpa com ASP.NET Core no nextwave(LuisDEV)
    - Os principais componentes que geralmente estão contidos aqui são:
      - Classes relacionadas a acesso a dados, como contexto de dados e implementação de Repositorios
      - Serviços de Infraestrutura, que permite integração com serviços anteriormente citados neste tópico.
+ - Camada Application
+   - Camada responsavel pela implementação de casos de uso, que poderá variar com o padrão arquitetural, como:
+     - Serviços de aplicação, caso siga com a abordagem padrão da Clean Architecture
+     - Commands e Queries, caso utilize o CQRS
+       - Em algumas implemntações, as Queries são encontradas na camada Infrastructure, lidando diretamente com a projeção de dados a partir da biblioteca utilizada para              acesso a dados (como EF Core, Dapper,  ADO.NET)
+     - DTOs de casos de uso, como
+       - View Models
+       - Input Models
+ - Camada UI/API
+   - Camada responsavel pelo codigo de interface com outros componentes externos, como usuarios ou aplicações
+   - Pode ser uma API(puramente backend) ou mesmo conter views, como em modelo MVC
+   - É configurada a parte de injeção de dependencia para a aplicação
+   - Os principais componentes que geralmente estão contidos aqui são:
+     - Controllers e Actions
+     - Filters
+     - Outros recursos do framework Web
      
